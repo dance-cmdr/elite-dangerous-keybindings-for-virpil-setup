@@ -9,9 +9,9 @@
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</MouseReset>
-	<MouseSensitivity Value="0.47355729" />
+	<MouseSensitivity Value="1.00000000" />
 	<MouseDecayRate Value="4.00000000" />
-	<MouseDeadzone Value="0.07465000" />
+	<MouseDeadzone Value="0.05000000" />
 	<MouseLinearity Value="1.00000000" />
 	<MouseGUI Value="1" />
 	<BlockMouseDecay>
@@ -80,20 +80,24 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</RightThrustButton>
 	<VerticalThrustRaw>
-		<Binding Device="3344812F" Key="Joy_YAxis" />
+		<Binding Device="{NoDevice}" Key="" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</VerticalThrustRaw>
 	<UpThrustButton>
 		<Primary Device="Keyboard" Key="Key_R" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Pos_Joy_UAxis">
+			<Modifier Device="3344012F" Key="Joy_31" />
+		</Secondary>
 	</UpThrustButton>
 	<DownThrustButton>
 		<Primary Device="Keyboard" Key="Key_F" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344812F" Key="Neg_Joy_UAxis">
+			<Modifier Device="3344812F" Key="Joy_31" />
+		</Secondary>
 	</DownThrustButton>
 	<AheadThrust>
-		<Binding Device="3344812F" Key="Joy_RYAxis" />
+		<Binding Device="3344812F" Key="Joy_YAxis" />
 		<Inverted Value="1" />
 		<Deadzone Value="0.00000000" />
 	</AheadThrust>
@@ -142,7 +146,7 @@
 	</ThrottleAxis>
 	<ThrottleRange Value="Bindings_ThrottleForewardOnly" />
 	<ToggleReverseThrottleInput>
-		<Primary Device="VPCThrottle" Key="Joy_32" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</ToggleReverseThrottleInput>
@@ -184,9 +188,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</SetSpeed50>
 	<SetSpeed75>
-		<Primary Device="Keyboard" Key="Key_S">
-			<Modifier Device="Keyboard" Key="Key_LeftControl" />
-		</Primary>
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</SetSpeed75>
 	<SetSpeed100>
@@ -279,18 +281,14 @@
 	</ToggleFlightAssist>
 	<UseBoostJuice>
 		<Primary Device="Keyboard" Key="Key_Tab" />
-		<Secondary Device="3344012F" Key="Pos_Joy_UAxis">
-			<Modifier Device="3344012F" Key="Joy_31" />
-		</Secondary>
+		<Secondary Device="3344012F" Key="Joy_12" />
 	</UseBoostJuice>
 	<HyperSuperCombination>
 		<Primary Device="Keyboard" Key="Key_J" />
 		<Secondary Device="VPCThrottle" Key="Joy_33" />
 	</HyperSuperCombination>
 	<Supercruise>
-		<Primary Device="Keyboard" Key="Key_J">
-			<Hold Value="1" />
-		</Primary>
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="VPCThrottle" Key="Joy_33">
 			<Hold Value="1" />
 		</Secondary>
@@ -306,7 +304,7 @@
 	</DisableRotationCorrectToggle>
 	<OrbitLinesToggle>
 		<Primary Device="Keyboard" Key="Key_Equals" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_56" />
 	</OrbitLinesToggle>
 	<SelectTarget>
 		<Primary Device="Keyboard" Key="Key_T" />
@@ -314,57 +312,59 @@
 	</SelectTarget>
 	<CycleNextTarget>
 		<Primary Device="Keyboard" Key="Key_G" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_15" />
 	</CycleNextTarget>
 	<CyclePreviousTarget>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_17" />
 	</CyclePreviousTarget>
 	<SelectHighestThreat>
 		<Primary Device="Keyboard" Key="Key_H" />
-		<Secondary Device="3344012F" Key="Joy_22">
-			<Modifier Device="3344012F" Key="Joy_21" />
-		</Secondary>
+		<Secondary Device="3344012F" Key="Joy_13" />
 	</SelectHighestThreat>
 	<CycleNextHostileTarget>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="3344012F" Key="Joy_23" />
+		<Secondary Device="3344012F" Key="Joy_16" />
 	</CycleNextHostileTarget>
 	<CyclePreviousHostileTarget>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="3344012F" Key="Joy_24" />
+		<Secondary Device="3344012F" Key="Joy_14" />
 	</CyclePreviousHostileTarget>
 	<TargetWingman0>
 		<Primary Device="Keyboard" Key="Key_7" />
-		<Secondary Device="VPCThrottle" Key="Joy_56" />
+		<Secondary Device="3344812F" Key="Joy_11" />
 	</TargetWingman0>
 	<TargetWingman1>
 		<Primary Device="Keyboard" Key="Key_8" />
-		<Secondary Device="VPCThrottle" Key="Joy_57" />
+		<Secondary Device="3344812F" Key="Joy_8" />
 	</TargetWingman1>
 	<TargetWingman2>
 		<Primary Device="Keyboard" Key="Key_9" />
-		<Secondary Device="VPCThrottle" Key="Joy_58" />
+		<Secondary Device="3344812F" Key="Joy_9" />
 	</TargetWingman2>
 	<SelectTargetsTarget>
 		<Primary Device="Keyboard" Key="Key_0" />
-		<Secondary Device="VPCThrottle" Key="Joy_61" />
+		<Secondary Device="3344812F" Key="Joy_7" />
 	</SelectTargetsTarget>
 	<WingNavLock>
 		<Primary Device="Keyboard" Key="Key_Minus" />
-		<Secondary Device="VPCThrottle" Key="Joy_59" />
+		<Secondary Device="3344812F" Key="Joy_10" />
 	</WingNavLock>
 	<CycleNextSubsystem>
 		<Primary Device="Keyboard" Key="Key_Y" />
-		<Secondary Device="3344812F" Key="Joy_24" />
+		<Secondary Device="3344012F" Key="Joy_16">
+			<Modifier Device="3344812F" Key="Joy_30" />
+		</Secondary>
 	</CycleNextSubsystem>
 	<CyclePreviousSubsystem>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="3344812F" Key="Joy_23" />
+		<Secondary Device="3344012F" Key="Joy_14">
+			<Modifier Device="3344812F" Key="Joy_30" />
+		</Secondary>
 	</CyclePreviousSubsystem>
 	<TargetNextRouteSystem>
 		<Primary Device="Mouse" Key="Mouse_5" />
-		<Secondary Device="VPCThrottle" Key="Joy_21" />
+		<Secondary Device="3344012F" Key="Joy_30" />
 	</TargetNextRouteSystem>
 	<PrimaryFire>
 		<Primary Device="Mouse" Key="Mouse_1" />
@@ -376,19 +376,15 @@
 	</SecondaryFire>
 	<CycleFireGroupNext>
 		<Primary Device="Keyboard" Key="Key_N" />
-		<Secondary Device="3344012F" Key="Joy_23">
-			<Modifier Device="3344812F" Key="Joy_30" />
-		</Secondary>
+		<Secondary Device="3344012F" Key="Joy_23" />
 	</CycleFireGroupNext>
 	<CycleFireGroupPrevious>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="3344012F" Key="Joy_24">
-			<Modifier Device="3344812F" Key="Joy_30" />
-		</Secondary>
+		<Secondary Device="3344012F" Key="Joy_24" />
 	</CycleFireGroupPrevious>
 	<DeployHardpointToggle>
 		<Primary Device="Keyboard" Key="Key_U" />
-		<Secondary Device="VPCThrottle" Key="Joy_27" />
+		<Secondary Device="3344012F" Key="Joy_21" />
 	</DeployHardpointToggle>
 	<DeployHardpointsOnFire Value="1" />
 	<ToggleButtonUpInput>
@@ -404,10 +400,10 @@
 	</DeployHeatSink>
 	<ShipSpotLightToggle>
 		<Primary Device="Keyboard" Key="Key_Insert" />
-		<Secondary Device="3344012F" Key="Joy_13" />
+		<Secondary Device="VPCThrottle" Key="Joy_34" />
 	</ShipSpotLightToggle>
 	<RadarRangeAxis>
-		<Binding Device="VPCThrottle" Key="Joy_RZAxis" />
+		<Binding Device="{NoDevice}" Key="" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</RadarRangeAxis>
@@ -421,19 +417,19 @@
 	</RadarDecreaseRange>
 	<IncreaseEnginesPower>
 		<Primary Device="Keyboard" Key="Key_UpArrow" />
-		<Secondary Device="3344012F" Key="Joy_14" />
+		<Secondary Device="3344812F" Key="Joy_14" />
 	</IncreaseEnginesPower>
 	<IncreaseWeaponsPower>
 		<Primary Device="Keyboard" Key="Key_RightArrow" />
-		<Secondary Device="3344012F" Key="Joy_15" />
+		<Secondary Device="3344812F" Key="Joy_15" />
 	</IncreaseWeaponsPower>
 	<IncreaseSystemsPower>
 		<Primary Device="Keyboard" Key="Key_LeftArrow" />
-		<Secondary Device="3344012F" Key="Joy_17" />
+		<Secondary Device="3344812F" Key="Joy_17" />
 	</IncreaseSystemsPower>
 	<ResetPowerDistribution>
 		<Primary Device="Keyboard" Key="Key_DownArrow" />
-		<Secondary Device="3344012F" Key="Joy_16" />
+		<Secondary Device="3344812F" Key="Joy_13" />
 	</ResetPowerDistribution>
 	<HMDReset>
 		<Primary Device="Keyboard" Key="Key_F12" />
@@ -441,10 +437,8 @@
 	</HMDReset>
 	<ToggleCargoScoop>
 		<Primary Device="Keyboard" Key="Key_Home" />
-		<Secondary Device="VPCThrottle" Key="Joy_37">
-			<Hold Value="1" />
-		</Secondary>
-		<ToggleOn Value="0" />
+		<Secondary Device="VPCThrottle" Key="Joy_45" />
+		<ToggleOn Value="1" />
 	</ToggleCargoScoop>
 	<EjectAllCargo>
 		<Primary Device="{NoDevice}" Key="" />
@@ -452,7 +446,7 @@
 	</EjectAllCargo>
 	<LandingGearToggle>
 		<Primary Device="Keyboard" Key="Key_L" />
-		<Secondary Device="VPCThrottle" Key="Joy_45" />
+		<Secondary Device="VPCThrottle" Key="Joy_47" />
 	</LandingGearToggle>
 	<MicrophoneMute>
 		<Primary Device="Keyboard" Key="Key_BackSlash" />
@@ -462,8 +456,8 @@
 	<MuteButtonMode Value="mute_toggle" />
 	<CqcMuteButtonMode Value="mute_pushToTalk" />
 	<UseShieldCell>
-		<Primary Device="VPCThrottle" Key="Joy_47" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_49" />
 	</UseShieldCell>
 	<FireChaffLauncher>
 		<Primary Device="{NoDevice}" Key="" />
@@ -489,12 +483,12 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</EngineColourToggle>
 	<NightVisionToggle>
-		<Primary Device="VPCThrottle" Key="Joy_34" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</NightVisionToggle>
 	<TriggerColonisationModule>
 		<Primary Device="Keyboard" Key="Key_Y" />
-		<Secondary Device="VPCThrottle" Key="Joy_49" />
+		<Secondary Device="VPCThrottle" Key="Joy_58" />
 	</TriggerColonisationModule>
 	<UIFocus>
 		<Primary Device="Keyboard" Key="Key_LeftShift" />
@@ -531,13 +525,13 @@
 		<Primary Device="Keyboard" Key="Key_M">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
 		</Primary>
-		<Secondary Device="VPCThrottle" Key="Joy_50" />
+		<Secondary Device="VPCThrottle" Key="Joy_53" />
 	</GalaxyMapOpen>
 	<SystemMapOpen>
-		<Primary Device="Keyboard" Key="Key_N">
+		<Primary Device="Keyboard" Key="Key_S">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
 		</Primary>
-		<Secondary Device="VPCThrottle" Key="Joy_53" />
+		<Secondary Device="VPCThrottle" Key="Joy_50" />
 	</SystemMapOpen>
 	<ShowPGScoreSummaryInput>
 		<Primary Device="Keyboard" Key="Key_F1" />
@@ -563,11 +557,11 @@
 	</OpenCodexGoToDiscovery>
 	<PlayerHUDModeToggle>
 		<Primary Device="Keyboard" Key="Key_M" />
-		<Secondary Device="3344812F" Key="Joy_30" />
+		<Secondary Device="3344812F" Key="Joy_18" />
 	</PlayerHUDModeToggle>
 	<ExplorationFSSEnter>
 		<Primary Device="Keyboard" Key="Key_Apostrophe" />
-		<Secondary Device="VPCThrottle" Key="Joy_55" />
+		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSEnter>
 	<UI_Up>
 		<Primary Device="Keyboard" Key="Key_W" />
@@ -595,7 +589,9 @@
 	</UI_Back>
 	<UI_Toggle>
 		<Primary Device="Keyboard" Key="Key_Equals" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_25">
+			<Hold Value="1" />
+		</Secondary>
 	</UI_Toggle>
 	<CycleNextPanel>
 		<Primary Device="Keyboard" Key="Key_E" />
@@ -656,20 +652,20 @@
 	<HeadlookMotionSensitivity Value="1.00000000" />
 	<yawRotateHeadlook Value="0" />
 	<CamPitchAxis>
-		<Binding Device="3344012F" Key="Joy_RYAxis" />
+		<Binding Device="3344012F" Key="Joy_YAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamPitchAxis>
 	<CamPitchUp>
 		<Primary Device="Keyboard" Key="Key_T" />
-		<Secondary Device="3344012F" Key="Joy_12" />
+		<Secondary Device="{NoDevice}" Key="" />
 	</CamPitchUp>
 	<CamPitchDown>
 		<Primary Device="Keyboard" Key="Key_G" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamPitchDown>
 	<CamYawAxis>
-		<Binding Device="3344012F" Key="Joy_RXAxis" />
+		<Binding Device="3344012F" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamYawAxis>
@@ -682,7 +678,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamYawRight>
 	<CamTranslateYAxis>
-		<Binding Device="3344812F" Key="Joy_RYAxis" />
+		<Binding Device="3344812F" Key="Joy_YAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateYAxis>
@@ -695,7 +691,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamTranslateBackward>
 	<CamTranslateXAxis>
-		<Binding Device="3344812F" Key="Joy_RXAxis" />
+		<Binding Device="3344812F" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateXAxis>
@@ -708,7 +704,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamTranslateRight>
 	<CamTranslateZAxis>
-		<Binding Device="3344012F" Key="Joy_YAxis" />
+		<Binding Device="3344812F" Key="Joy_RYAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamTranslateZAxis>
@@ -721,7 +717,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</CamTranslateDown>
 	<CamZoomAxis>
-		<Binding Device="3344812F" Key="Joy_YAxis" />
+		<Binding Device="3344012F" Key="Joy_RYAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</CamZoomAxis>
@@ -740,7 +736,7 @@
 	</CamTranslateZHold>
 	<GalaxyMapHome>
 		<Primary Device="Keyboard" Key="Key_Home" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_6" />
 	</GalaxyMapHome>
 	<ToggleDriveAssist>
 		<Primary Device="Keyboard" Key="Key_Z" />
@@ -755,7 +751,7 @@
 	<MouseBuggyYMode Value="" />
 	<MouseBuggyYDecay Value="0" />
 	<SteeringAxis>
-		<Binding Device="334401F8" Key="Joy_ZAxis" />
+		<Binding Device="3344812F" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</SteeringAxis>
@@ -782,15 +778,15 @@
 	</BuggyRollRightButton>
 	<BuggyPitchAxis>
 		<Binding Device="3344012F" Key="Joy_YAxis" />
-		<Inverted Value="1" />
+		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</BuggyPitchAxis>
 	<BuggyPitchUpButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_W" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</BuggyPitchUpButton>
 	<BuggyPitchDownButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_S" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</BuggyPitchDownButton>
 	<VerticalThrustersButton>
@@ -802,32 +798,34 @@
 	</VerticalThrustersButton>
 	<BuggyPrimaryFireButton>
 		<Primary Device="Mouse" Key="Mouse_1" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_3" />
 	</BuggyPrimaryFireButton>
 	<BuggySecondaryFireButton>
 		<Primary Device="Mouse" Key="Mouse_2" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344812F" Key="Joy_3" />
 	</BuggySecondaryFireButton>
 	<AutoBreakBuggyButton>
 		<Primary Device="Keyboard" Key="Key_X" />
-		<Secondary Device="VPCThrottle" Key="Joy_45" />
-		<ToggleOn Value="0" />
+		<Secondary Device="3344812F" Key="Neg_Joy_UAxis">
+			<Modifier Device="3344812F" Key="Joy_31" />
+		</Secondary>
+		<ToggleOn Value="1" />
 	</AutoBreakBuggyButton>
 	<HeadlightsBuggyButton>
 		<Primary Device="Keyboard" Key="Key_L" />
-		<Secondary Device="VPCThrottle" Key="Joy_47" />
+		<Secondary Device="VPCThrottle" Key="Joy_34" />
 	</HeadlightsBuggyButton>
 	<ToggleBuggyTurretButton>
 		<Primary Device="Keyboard" Key="Key_U" />
-		<Secondary Device="Mouse" Key="Mouse_5" />
+		<Secondary Device="VPCThrottle" Key="Joy_36" />
 	</ToggleBuggyTurretButton>
 	<BuggyCycleFireGroupNext>
 		<Primary Device="Keyboard" Key="Key_N" />
-		<Secondary Device="3344012F" Key="Joy_10" />
+		<Secondary Device="3344012F" Key="Joy_23" />
 	</BuggyCycleFireGroupNext>
 	<BuggyCycleFireGroupPrevious>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="3344012F" Key="Joy_8" />
+		<Secondary Device="3344012F" Key="Joy_24" />
 	</BuggyCycleFireGroupPrevious>
 	<SelectTarget_Buggy>
 		<Primary Device="Mouse" Key="Mouse_2" />
@@ -865,25 +863,25 @@
 	</BuggyTurretPitchDownButton>
 	<BuggyTurretMouseSensitivity Value="1.00000000" />
 	<BuggyTurretMouseDeadzone Value="0.05000000" />
-	<BuggyTurretMouseLinearity Value="1.20000005" />
+	<BuggyTurretMouseLinearity Value="1.00000000" />
 	<DriveSpeedAxis>
-		<Binding Device="VPCThrottle" Key="Joy_RXAxis" />
+		<Binding Device="3344812F" Key="Joy_YAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</DriveSpeedAxis>
-	<BuggyThrottleRange Value="Bindings_BuggyThrottleForewardOnly" />
+	<BuggyThrottleRange Value="" />
 	<BuggyToggleReverseThrottleInput>
-		<Primary Device="VPCThrottle" Key="Joy_32" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</BuggyToggleReverseThrottleInput>
 	<BuggyThrottleIncrement Value="0.00000000" />
 	<IncreaseSpeedButtonMax>
-		<Primary Device="Keyboard" Key="Key_W" />
+		<Primary Device="Keyboard" Key="Key_E" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</IncreaseSpeedButtonMax>
 	<DecreaseSpeedButtonMax>
-		<Primary Device="Keyboard" Key="Key_S" />
+		<Primary Device="Keyboard" Key="Key_Q" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</DecreaseSpeedButtonMax>
 	<IncreaseSpeedButtonPartial>
@@ -898,36 +896,34 @@
 	</DecreaseSpeedButtonPartial>
 	<IncreaseEnginesPower_Buggy>
 		<Primary Device="Keyboard" Key="Key_UpArrow" />
-		<Secondary Device="3344012F" Key="Joy_14" />
+		<Secondary Device="3344812F" Key="Joy_14" />
 	</IncreaseEnginesPower_Buggy>
 	<IncreaseWeaponsPower_Buggy>
 		<Primary Device="Keyboard" Key="Key_RightArrow" />
-		<Secondary Device="3344012F" Key="Joy_15" />
+		<Secondary Device="3344812F" Key="Joy_15" />
 	</IncreaseWeaponsPower_Buggy>
 	<IncreaseSystemsPower_Buggy>
 		<Primary Device="Keyboard" Key="Key_LeftArrow" />
-		<Secondary Device="3344012F" Key="Joy_17" />
+		<Secondary Device="3344812F" Key="Joy_17" />
 	</IncreaseSystemsPower_Buggy>
 	<ResetPowerDistribution_Buggy>
 		<Primary Device="Keyboard" Key="Key_DownArrow" />
-		<Secondary Device="3344012F" Key="Joy_16" />
+		<Secondary Device="3344812F" Key="Joy_13" />
 	</ResetPowerDistribution_Buggy>
 	<ToggleCargoScoop_Buggy>
 		<Primary Device="Keyboard" Key="Key_Home" />
-		<Secondary Device="VPCThrottle" Key="Joy_37">
-			<Hold Value="1" />
-		</Secondary>
-		<ToggleOn Value="0" />
+		<Secondary Device="VPCThrottle" Key="Joy_45" />
+		<ToggleOn Value="1" />
 	</ToggleCargoScoop_Buggy>
 	<EjectAllCargo_Buggy>
 		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_45">
+			<Hold Value="1" />
+		</Secondary>
 	</EjectAllCargo_Buggy>
 	<RecallDismissShip>
-		<Primary Device="Keyboard" Key="Key_R">
-			<Modifier Device="Keyboard" Key="Key_LeftControl" />
-		</Primary>
-		<Secondary Device="3344012F" Key="Joy_13" />
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_48" />
 	</RecallDismissShip>
 	<EnableMenuGroupsSRV Value="0" />
 	<UIFocus_Buggy>
@@ -936,35 +932,31 @@
 	</UIFocus_Buggy>
 	<FocusLeftPanel_Buggy>
 		<Primary Device="Keyboard" Key="Key_1" />
-		<Secondary Device="3344812F" Key="Joy_11" />
+		<Secondary Device="3344012F" Key="Joy_11" />
 	</FocusLeftPanel_Buggy>
 	<FocusCommsPanel_Buggy>
 		<Primary Device="Keyboard" Key="Key_2" />
-		<Secondary Device="3344812F" Key="Joy_8" />
+		<Secondary Device="3344012F" Key="Joy_8" />
 	</FocusCommsPanel_Buggy>
 	<QuickCommsPanel_Buggy>
 		<Primary Device="Keyboard" Key="Key_Enter" />
-		<Secondary Device="3344812F" Key="Joy_7" />
+		<Secondary Device="3344012F" Key="Joy_7" />
 	</QuickCommsPanel_Buggy>
 	<FocusRadarPanel_Buggy>
 		<Primary Device="Keyboard" Key="Key_3" />
-		<Secondary Device="3344812F" Key="Joy_10" />
+		<Secondary Device="3344012F" Key="Joy_10" />
 	</FocusRadarPanel_Buggy>
 	<FocusRightPanel_Buggy>
 		<Primary Device="Keyboard" Key="Key_4" />
-		<Secondary Device="3344812F" Key="Joy_9" />
+		<Secondary Device="3344012F" Key="Joy_9" />
 	</FocusRightPanel_Buggy>
 	<GalaxyMapOpen_Buggy>
-		<Primary Device="Keyboard" Key="Key_M">
-			<Modifier Device="Keyboard" Key="Key_LeftControl" />
-		</Primary>
-		<Secondary Device="VPCThrottle" Key="Joy_50" />
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_53" />
 	</GalaxyMapOpen_Buggy>
 	<SystemMapOpen_Buggy>
-		<Primary Device="Keyboard" Key="Key_S">
-			<Modifier Device="Keyboard" Key="Key_LeftControl" />
-		</Primary>
-		<Secondary Device="VPCThrottle" Key="Joy_53" />
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_50" />
 	</SystemMapOpen_Buggy>
 	<OpenCodexGoToDiscovery_Buggy>
 		<Primary Device="Keyboard" Key="Key_O" />
@@ -972,7 +964,7 @@
 	</OpenCodexGoToDiscovery_Buggy>
 	<PlayerHUDModeToggle_Buggy>
 		<Primary Device="Keyboard" Key="Key_M" />
-		<Secondary Device="3344012F" Key="Joy_30" />
+		<Secondary Device="3344812F" Key="Joy_18" />
 	</PlayerHUDModeToggle_Buggy>
 	<HeadLookToggle_Buggy>
 		<Primary Device="Mouse" Key="Mouse_3" />
@@ -1053,31 +1045,33 @@
 	</MultiCrewCockpitUICycleBackward>
 	<OrderRequestDock>
 		<Primary Device="Keyboard" Key="Key_Numpad_0" />
-		<Secondary Device="3344812F" Key="Joy_14" />
+		<Secondary Device="VPCThrottle" Key="Joy_71">
+			<Modifier Device="VPCThrottle" Key="Joy_73" />
+		</Secondary>
 	</OrderRequestDock>
 	<OrderDefensiveBehaviour>
 		<Primary Device="Keyboard" Key="Key_Numpad_1" />
-		<Secondary Device="3344812F" Key="Joy_17" />
+		<Secondary Device="VPCThrottle" Key="Joy_72" />
 	</OrderDefensiveBehaviour>
 	<OrderAggressiveBehaviour>
 		<Primary Device="Keyboard" Key="Key_Numpad_2" />
-		<Secondary Device="3344812F" Key="Joy_16" />
+		<Secondary Device="VPCThrottle" Key="Joy_69" />
 	</OrderAggressiveBehaviour>
 	<OrderFocusTarget>
 		<Primary Device="Keyboard" Key="Key_Numpad_3" />
-		<Secondary Device="3344812F" Key="Joy_13" />
+		<Secondary Device="VPCThrottle" Key="Joy_68" />
 	</OrderFocusTarget>
 	<OrderHoldFire>
 		<Primary Device="Keyboard" Key="Key_Numpad_4" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_70" />
 	</OrderHoldFire>
 	<OrderHoldPosition>
 		<Primary Device="Keyboard" Key="Key_Numpad_5" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_73" />
 	</OrderHoldPosition>
 	<OrderFollow>
 		<Primary Device="Keyboard" Key="Key_Numpad_6" />
-		<Secondary Device="3344812F" Key="Joy_15" />
+		<Secondary Device="VPCThrottle" Key="Joy_71" />
 	</OrderFollow>
 	<OpenOrders>
 		<Primary Device="{NoDevice}" Key="" />
@@ -1088,21 +1082,21 @@
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
 			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
 		</Primary>
-		<Secondary Device="VPCThrottle" Key="Joy_1" />
+		<Secondary Device="VPCThrottle" Key="Joy_74" />
 	</PhotoCameraToggle>
 	<PhotoCameraToggle_Buggy>
 		<Primary Device="Keyboard" Key="Key_Space">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
 			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
 		</Primary>
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_74" />
 	</PhotoCameraToggle_Buggy>
 	<PhotoCameraToggle_Humanoid>
 		<Primary Device="Keyboard" Key="Key_Space">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
 			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
 		</Primary>
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="VPCThrottle" Key="Joy_74" />
 	</PhotoCameraToggle_Humanoid>
 	<VanityCameraScrollLeft>
 		<Primary Device="Keyboard" Key="Key_LeftArrow" />
@@ -1114,7 +1108,9 @@
 	</VanityCameraScrollRight>
 	<ToggleFreeCam>
 		<Primary Device="Keyboard" Key="Key_Numpad_0" />
-		<Secondary Device="VPCThrottle" Key="Joy_4" />
+		<Secondary Device="VPCThrottle" Key="Joy_1">
+			<Modifier Device="VPCThrottle" Key="Joy_3" />
+		</Secondary>
 	</ToggleFreeCam>
 	<VanityCameraOne>
 		<Primary Device="Keyboard" Key="Key_Numpad_1" />
@@ -1150,15 +1146,15 @@
 	</VanityCameraEight>
 	<VanityCameraNine>
 		<Primary Device="Keyboard" Key="Key_Numpad_9" />
-		<Secondary Device="Keyboard" Key="Key_Backspace" />
+		<Secondary Device="{NoDevice}" Key="" />
 	</VanityCameraNine>
 	<VanityCameraTen>
-		<Primary Device="VPCThrottle" Key="Joy_7" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</VanityCameraTen>
 	<FreeCamToggleHUD>
 		<Primary Device="Keyboard" Key="Key_LeftControl" />
-		<Secondary Device="VPCThrottle" Key="Joy_5" />
+		<Secondary Device="{NoDevice}" Key="" />
 	</FreeCamToggleHUD>
 	<FreeCamSpeedInc>
 		<Primary Device="Keyboard" Key="Key_Equals" />
@@ -1337,7 +1333,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</GalnetAudio_ClearQueue>
 	<ExplorationFSSCameraPitch>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="3344012F" Key="Joy_YAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</ExplorationFSSCameraPitch>
@@ -1350,7 +1346,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSCameraPitchDecreaseButton>
 	<ExplorationFSSCameraYaw>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="3344012F" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</ExplorationFSSCameraYaw>
@@ -1364,11 +1360,11 @@
 	</ExplorationFSSCameraYawDecreaseButton>
 	<ExplorationFSSZoomIn>
 		<Primary Device="Mouse" Key="Mouse_1" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_3" />
 	</ExplorationFSSZoomIn>
 	<ExplorationFSSZoomOut>
 		<Primary Device="Mouse" Key="Mouse_2" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344812F" Key="Joy_3" />
 	</ExplorationFSSZoomOut>
 	<ExplorationFSSMiniZoomIn>
 		<Primary Device="Keyboard" Key="Key_UpArrow" />
@@ -1379,17 +1375,17 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</ExplorationFSSMiniZoomOut>
 	<ExplorationFSSRadioTuningX_Raw>
-		<Binding Device="{NoDevice}" Key="" />
+		<Binding Device="3344812F" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</ExplorationFSSRadioTuningX_Raw>
 	<ExplorationFSSRadioTuningX_Increase>
 		<Primary Device="Keyboard" Key="Key_D" />
-		<Secondary Device="Keyboard" Key="Key_RightBracket" />
+		<Secondary Device="3344012F" Key="Joy_23" />
 	</ExplorationFSSRadioTuningX_Increase>
 	<ExplorationFSSRadioTuningX_Decrease>
 		<Primary Device="Keyboard" Key="Key_A" />
-		<Secondary Device="Keyboard" Key="Key_LeftBracket" />
+		<Secondary Device="3344012F" Key="Joy_24" />
 	</ExplorationFSSRadioTuningX_Decrease>
 	<ExplorationFSSRadioTuningAbsoluteX>
 		<Binding Device="{NoDevice}" Key="" />
@@ -1399,11 +1395,11 @@
 	<FSSTuningSensitivity Value="1.00000000" />
 	<ExplorationFSSDiscoveryScan>
 		<Primary Device="Mouse" Key="Mouse_3" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_13" />
 	</ExplorationFSSDiscoveryScan>
 	<ExplorationFSSQuit>
 		<Primary Device="Keyboard" Key="Key_Backspace" />
-		<Secondary Device="Keyboard" Key="Key_Apostrophe" />
+		<Secondary Device="3344012F" Key="Joy_12" />
 	</ExplorationFSSQuit>
 	<FSSMouseXMode Value="Bindings_MouseYaw" />
 	<FSSMouseXDecay Value="1" />
@@ -1414,15 +1410,17 @@
 	<FSSMouseLinearity Value="1.00000000" />
 	<ExplorationFSSTarget>
 		<Primary Device="Keyboard" Key="Key_T" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_6" />
 	</ExplorationFSSTarget>
 	<ExplorationFSSShowHelp>
 		<Primary Device="Keyboard" Key="Key_H" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344012F" Key="Joy_7" />
 	</ExplorationFSSShowHelp>
 	<ExplorationSAAChangeScannedAreaViewToggle>
 		<Primary Device="Mouse" Key="Mouse_3" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Secondary Device="3344812F" Key="Neg_Joy_UAxis">
+			<Modifier Device="3344812F" Key="Joy_31" />
+		</Secondary>
 		<ToggleOn Value="0" />
 	</ExplorationSAAChangeScannedAreaViewToggle>
 	<ExplorationSAAExitThirdPerson>
@@ -1431,11 +1429,11 @@
 	</ExplorationSAAExitThirdPerson>
 	<ExplorationSAANextGenus>
 		<Primary Device="Keyboard" Key="Key_E" />
-		<Secondary Device="3344012F" Key="Joy_23" />
+		<Secondary Device="3344812F" Key="Joy_24" />
 	</ExplorationSAANextGenus>
 	<ExplorationSAAPreviousGenus>
 		<Primary Device="Keyboard" Key="Key_Q" />
-		<Secondary Device="3344012F" Key="Joy_24" />
+		<Secondary Device="3344812F" Key="Joy_23" />
 	</ExplorationSAAPreviousGenus>
 	<SAAThirdPersonMouseXMode Value="Bindings_MouseYaw" />
 	<SAAThirdPersonMouseXDecay Value="0" />
@@ -1443,7 +1441,7 @@
 	<SAAThirdPersonMouseYDecay Value="0" />
 	<SAAThirdPersonMouseSensitivity Value="5.00000000" />
 	<SAAThirdPersonYawAxisRaw>
-		<Binding Device="3344012F" Key="Joy_RXAxis" />
+		<Binding Device="3344012F" Key="Joy_XAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</SAAThirdPersonYawAxisRaw>
@@ -1456,7 +1454,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</SAAThirdPersonYawRightButton>
 	<SAAThirdPersonPitchAxisRaw>
-		<Binding Device="3344012F" Key="Joy_RYAxis" />
+		<Binding Device="3344012F" Key="Joy_YAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</SAAThirdPersonPitchAxisRaw>
@@ -1469,7 +1467,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</SAAThirdPersonPitchDownButton>
 	<SAAThirdPersonFovAxisRaw>
-		<Binding Device="3344812F" Key="Joy_RYAxis" />
+		<Binding Device="3344812F" Key="Joy_YAxis" />
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</SAAThirdPersonFovAxisRaw>
@@ -1644,9 +1642,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSelectSecondaryWeaponButton>
 	<HumanoidSelectUtilityWeaponButton>
-		<Primary Device="Keyboard" Key="Key_E">
-			<Modifier Device="Keyboard" Key="Key_LeftControl" />
-		</Primary>
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSelectUtilityWeaponButton>
 	<HumanoidSelectNextWeaponButton>
